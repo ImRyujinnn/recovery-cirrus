@@ -29,6 +29,7 @@ task:
     building_script: # To sync source
       - cd linjetpbrp
       - . build/envsetup.sh
+      - export ALLOW_MISSING_DEPENDENCIES=true
       - lunch twrp_agate-eng
       - mka bootimage
     upload_script: # To sync source
